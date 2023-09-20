@@ -1,4 +1,3 @@
-// HUNT3R_PROCESS_EXPLORER_1
 // API CALL -> WTSEnumerateProcesses
 // API CALL-> CreateFile
 //------------------------------------------------------------------------------------------INCLUDES
