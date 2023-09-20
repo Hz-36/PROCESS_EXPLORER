@@ -72,7 +72,7 @@ int main() {
                 LocalFree(pSidString);
             }
             else {
-                output += L"Failed to retrieve SID for PID " + std::to_wstring(pProcessInfo[i].ProcessId);
+                output += L"Failed to Retrieve SID for PID " + std::to_wstring(pProcessInfo[i].ProcessId);
             }
 
             output += L"\n";
@@ -80,11 +80,11 @@ int main() {
             output += L"------------------------------------------------------------------------------------\n\n";
         }
 
-        std::wstring filePath = L"C:\\temp\\test.txt";
+        std::wstring filePath = L"C:\\temp\\output.txt";
         WriteToFile(filePath, output);
     }
     else {
-        std::cerr << "WTSEnumerateProcesses failed. Error code: " << GetLastError() << std::endl;
+        std::cerr << "WTSEnumerateProcesses Failed. ERROR: " << GetLastError() << std::endl;
         return 1;
     }
 
